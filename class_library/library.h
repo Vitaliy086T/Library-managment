@@ -1,19 +1,20 @@
-#ifndef BOOK.H
-#define BOOK.H
+#ifndef LIBRARY_H
+#define LIBRARY_H
 #include <vector>
 #include <iostream>
-#include "../class_library/library.h"
+#include "../class_book/book.h"
 using namespace std;
 
 
-class Book : public Library{
+class Library{
     public:
-        void addBook();
-        void deleteBook();
-        void searchBook();
-        void allbooks();
+        void addBook(const Book& book); //Добавление книги
+        void deleteBook(int number); //Удаление книги по уникальному номеру
+        Book* findBookByName(const string& name); // метод для поиска книги по названию
+        vector <Book> getBooks(); // метод для получения списка всех книг
+        void setBookAvailable(int number, bool available);
     private: 
-        vector <Library> books;
+        vector <Book> books;
 };
 
 #endif

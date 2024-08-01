@@ -1,0 +1,14 @@
+ g++ -std=c++11 -Iclass_book -Iclass_library     
+class_book/methods/constructor.cpp     
+class_book/methods/getauthor.cpp     
+class_book/methods/getname.cpp    
+ class_book/methods/getnumber.cpp    
+ class_book/methods/getyear.cpp    
+ class_book/methods/isavailable.cpp   
+  class_book/methods/setbookavailable.cpp   
+  class_library/methods/addbook.cpp   
+  class_library/methods/findbookbyname.cpp  
+   class_library/methods/getbooks.cpp  
+   class_library/methods/deletebook.cpp  
+   class_library/methods/setbookavailable.cpp 
+    main.cpp -o library_management
