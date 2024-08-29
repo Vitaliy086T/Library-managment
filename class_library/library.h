@@ -5,10 +5,11 @@
 #include "../class_book/book.h"
 using namespace std;
 
-
 class Library{
     public:
-        void addBook(const Book& book); //ƒобавление книги
+        void addBook(const Book& book){
+            books.push_back(book);
+        }; //ƒобавление книги
         void deleteBook(int number); //”даление книги по уникальному номеру
         Book* findBookByName(const string& name); // метод дл€ поиска книги по названию
         vector <Book> getBooks(); // метод дл€ получени€ списка всех книг
