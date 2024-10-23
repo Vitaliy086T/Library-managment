@@ -10,7 +10,7 @@ int main(){
     Book book3("Martin Eden", "J. London", 1909, 5, true);
     
     library.addBook(book1);
-    /*library.addBook(book2);
+    library.addBook(book2);
     library.addBook(book3);
 
     Book* foundbook = library.findBookByName("Martin Eden");
@@ -30,7 +30,7 @@ int main(){
     for(auto& book : books){
         cout << book.getname() << " by " << book.getAuthor() << 
         " Available: " << (book.isAvailable() ? "Yes" : "No")  << endl;
-    }*/
+    }
     system("pause");
     return 0;
 }
